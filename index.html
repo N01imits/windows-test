@@ -623,31 +623,31 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn"><a
-            href="./src/assets/img/our_works/big_img/1.png"><img class="preview" src="./src/assets/img/our_works/1.png"
+            href="/1.png"><img class="preview" src="./src/assets/img/our_works/1.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.1s"><a
-            href="./src/assets/img/our_works/big_img/2.png"><img class="preview" src="./src/assets/img/our_works/2.png"
+            href="/2.png"><img class="preview" src="./src/assets/img/our_works/2.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s"><a
-            href="./src/assets/img/our_works/big_img/3.png"><img class="preview" src="./src/assets/img/our_works/3.png"
+            href="/3.png"><img class="preview" src="./src/assets/img/our_works/3.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.3s"><a
-            href="./src/assets/img/our_works/big_img/4.png"><img class="preview" src="./src/assets/img/our_works/4.png"
+            href="/4.png"><img class="preview" src="./src/assets/img/our_works/4.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.4s"><a
-            href="./src/assets/img/our_works/big_img/5.png"><img class="preview" src="./src/assets/img/our_works/5.png"
+            href="/5.png"><img class="preview" src="./src/assets/img/our_works/5.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.5s"><a
-            href="./src/assets/img/our_works/big_img/6.png"><img class="preview" src="./src/assets/img/our_works/6.png"
+            href="/6.png"><img class="preview" src="./src/assets/img/our_works/6.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.6s"><a
-            href="./src/assets/img/our_works/big_img/7.png"><img class="preview" src="./src/assets/img/our_works/7.png"
+            href="/7.png"><img class="preview" src="./src/assets/img/our_works/7.png"
               alt="window"></a></div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.7s"><a
-            href="./src/assets/img/our_works/big_img/8.png"><img class="preview" src="./src/assets/img/our_works/8.png"
+            href="/8.png"><img class="preview" src="./src/assets/img/our_works/8.png"
               alt="window"></a></div>
       </div>
-    </div>
+
   </section>
 
   <!-- Guarantees -->
@@ -844,7 +844,7 @@
 
   <!-- Modals -->
   <!-- Request a call -->
-  <div class="popup">
+  <div class="popup" data-modal>
     <div class="popup_dialog">
       <div class="popup_content text-center">
         <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -862,7 +862,7 @@
   </div>
 
   <!-- Request an engineer -->
-  <div class="popup_engineer">
+  <div class="popup_engineer" data-modal>
     <div class="popup_dialog">
       <div class="popup_content text-center">
         <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -880,7 +880,7 @@
   </div>
 
   <!-- Calculator -->
-  <div class="popup_calc">
+  <div class="popup_calc" data-modal>
     <div class="popup_dialog">
       <div class="popup_calc_content text-center">
         <button type="button" class="popup_calc_close"><strong>&times;</strong></button>
@@ -912,7 +912,7 @@
     </div>
   </div>
 
-  <div class="popup_calc_profile">
+  <div class="popup_calc_profile" data-modal>
     <div class="popup_dialog">
       <div class="popup_calc_profile_content text-center">
         <button type="button" class="popup_calc_profile_close"><strong>&times;</strong></button>
@@ -927,13 +927,13 @@
         </select>
         <img src="./src/assets/img/modal_calc/icon_cold.png" alt="">
         <label>
-          <input class="checkbox" type="checkbox" name="checkbox-test">
+          <input class="checkbox" type="radio" name="cold-warm" value="cold">
           <span class="checkbox-custom" id="cold"></span>
           <span class="label">Холодное</span>
         </label>
         <img src="./src/assets/img/modal_calc/icon_warm.png" alt="">
         <label>
-          <input class="checkbox" type="checkbox" name="checkbox-test">
+          <input class="checkbox" type="radio" name="cold-warm" value="warm">
           <span class="checkbox-custom" id="warm"></span>
           <span class="label">Теплое</span>
         </label>
@@ -943,12 +943,12 @@
     </div>
   </div>
 
-  <div class="popup_calc_end">
+  <div class="popup_calc_end" data-modal>
     <div class="popup_dialog">
       <div class="popup_content text-center">
         <button type="button" class="popup_calc_end_close"><strong>&times;</strong></button>
         <div class="popup_form">
-          <form class="form" action="#">
+          <form class="form" action="#" data-calc="end">
             <h2>Спасибо за обращение! <br>Оставьте свои данные</h2>
             <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
             <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">

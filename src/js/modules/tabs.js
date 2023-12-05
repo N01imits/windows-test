@@ -1,8 +1,9 @@
-const tabs = ({
+export const tabs = ({
 	headerSelector,
 	tabSelector,
 	contentSelector,
 	activeClass,
+	display = 'block',
 }) => {
 	const header = document.querySelector(headerSelector);
 	const tabs = document.querySelectorAll(tabSelector);
@@ -35,7 +36,7 @@ const tabs = ({
 	};
 
 	const showTabContent = (i = 0) => {
-		contents[i].style.display = 'block';
+		contents[i].style.display = display;
 		tabs[i].classList.add(activeClass);
 	};
 
@@ -45,5 +46,3 @@ const tabs = ({
 	header.addEventListener('keypress', checkPressedButton);
 	header.addEventListener('click', checkPressedButton);
 };
-
-export default tabs;
